@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="lg" x1=".7" x2=".3" y1="0" y2="1">
+      <stop offset="0%" class="dark"/>
+      <stop offset="50%" class="light"/>
+      <stop offset="100%" class="dark"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .dark { stop-color: #FF9c00; }
+    .light { stop-color: #FFBB34; }
+  </style>
+  <path d="M0,0h256v256h-256z" fill="url(#lg)" />
+  <path transform="translate(-25,2) scale(36)" d="M3.75,1v1m-1,0v3m1,0v1" stroke="#fff"/>
+  <path transform="translate(128,113) scale(6)" fill="#fff" d="M5.94 0 4.83 5.018H3.79L2.974 1.66l-.817 3.356h-1.04L.001 0h1.03l.679 3.558L2.536 0h.875l.827 3.558L4.914 0Zm.562 5.017V0h3.355v.837H7.54v1.195h1.98v.81H7.54v1.34h2.329v.834zm7.696-1.478q0 .723-.462 1.099-.461.372-1.316.379h-1.95V0h1.76q.873 0 1.365.334.493.334.493 1.037 0 .34-.172.627-.173.286-.545.434.441.11.634.427t.193.679zM11.508.838v1.26h.723q.82 0 .82-.62 0-.627-.786-.64zm1.657 2.69q0-.675-.683-.7h-.975v1.355h.882q.397 0 .586-.186.19-.186.19-.469z"/>
+</svg>

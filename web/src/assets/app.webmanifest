@@ -1,7 +1,7 @@
 {
-  "name": "Sipgator Web",
+  "name": "Sipgator Open",
   "lang": "de",
-  "short_name": "Sipgator Web",
+  "short_name": "Sipgator Open",
   "scope": "/",
   "start_url": "/",
   "display": "minimal-ui",

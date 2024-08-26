@@ -80,7 +80,7 @@ export class SipgatorLogin extends LitElement {
         </span>
         </main>
       </dialog>
-      <link href="/beercss/beer.min.css" rel="stylesheet">
+      <link href="./beercss/beer.min.css" rel="stylesheet">
     `;
   }
 

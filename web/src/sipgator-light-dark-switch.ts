@@ -36,7 +36,7 @@ export class SipgatorLightDarkSwitch extends LitElement {
           <i>light_mode</i>
         </span>
       </label>
-      <link href="/beercss/beer.min.css" rel="stylesheet">
+      <link href="./beercss/beer.min.css" rel="stylesheet">
     `
   }
 }

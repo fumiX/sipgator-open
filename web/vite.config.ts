@@ -1,6 +1,9 @@
 import { viteStaticCopy } from "vite-plugin-static-copy"
 import compression from "vite-plugin-compression2"
-export default {
+import { defineConfig } from "vite"
+
+export default defineConfig({
+  base: "",
   plugins: [
     viteStaticCopy({
       targets: [
@@ -25,4 +28,4 @@ export default {
       algorithm: "brotliCompress", exclude: [/\.br$/, /\.gz$/]
     })
   ]
-}
+})

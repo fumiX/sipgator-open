@@ -29,7 +29,7 @@ export class SipgatorApp extends LitElement {
     return html`
       <nav class="bottom" style="justify-content: space-between;overflow-x: auto">
         <header>
-          <img class="circle" src="/favicon.svg" alt="SipGator-Logo">
+          <img class="circle" src="./favicon.svg" alt="SipGator-Logo">
         </header>
         ${
           SipgatorApp.pages.map(p =>
@@ -41,7 +41,7 @@ export class SipgatorApp extends LitElement {
           <sipgator-login .credential="${this.credential}" @credential-update="${this.handleCredentialUpdate}"></sipgator-login>
         </span>
       </nav>
-      <link href="/beercss/beer.min.css" rel="stylesheet">
+      <link href="./beercss/beer.min.css" rel="stylesheet">
       <main class="responsive" style="margin-bottom: 8rem">
         ${ this.componentForPath(this.path) }
       </main>

@@ -51,7 +51,7 @@ export abstract class SipgatorPage extends LitElement {
     return html`
       <h1 class="small"><i class="extra padding">${ this.icon }</i>${ this.label }</h1>
       ${ when(this.credential, () => this.credential ? renderWithCredentials(this.credential) : fallback, () => fallback) }
-      <link rel="stylesheet" href="/beercss/beer.min.css" />
+      <link rel="stylesheet" href="./beercss/beer.min.css" />
     `
   }
 }

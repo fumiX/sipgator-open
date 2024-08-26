@@ -54,6 +54,6 @@ export class SipgatorLoggedOutMessage extends LitElement {
           </p>
         </div>
       </div>
-    <link href="/beercss/beer.min.css" rel="stylesheet">`
+    <link href="./beercss/beer.min.css" rel="stylesheet">`
   }
 }

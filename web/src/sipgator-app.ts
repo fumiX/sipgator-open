@@ -27,7 +27,7 @@ export class SipgatorApp extends LitElement {
 
   render() {
     return html`
-      <nav class="m l bottom" style="justify-content: space-between">
+      <nav class="bottom" style="justify-content: space-between;overflow-x: auto">
         <header>
           <img class="circle" src="/favicon.svg" alt="SipGator-Logo">
         </header>

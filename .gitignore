@@ -1,7 +1,8 @@
 build/
 
+/.gradle/
+/.kotlin/
+/kotlin-js-store/
 /web/.vite/
 /web/dist/
 /web/node_modules/
-/kotlin-js-store/
-/.kotlin/

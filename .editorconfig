@@ -1,0 +1,17 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+max_line_length = 140
+trim_trailing_whitespace = true
+
+ij_java_class_count_to_use_import_on_demand = 9999
+ij_java_names_count_to_use_import_on_demand = 9999
+ij_java_use_single_class_imports = true
+ij_java_imports_layout =$*,|,android.**,androidx.**,|,java.**,javax.**,|,*,|,de.fumix.**
+ij_kotlin_imports_layout = $*,|,android.**,androidx.**,|,java.**,javax.**,|,*,|,de.fumix.**
+ij_visual_guides = 120,135,140

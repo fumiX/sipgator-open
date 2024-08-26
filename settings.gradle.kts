@@ -1,4 +1,4 @@
 include(":common", ":web")
-rootProject.name = "SipGator-open"
+rootProject.name = "sipgator-open"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")

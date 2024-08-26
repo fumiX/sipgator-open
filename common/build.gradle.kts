@@ -42,5 +42,6 @@ tasks.withType<KotlinJsCompile> {
   compilerOptions {
     moduleKind.set(JsModuleKind.MODULE_ES)
     useEsClasses.set(true)
+    optIn.add("kotlin.js.ExperimentalJsExport")
   }
 }

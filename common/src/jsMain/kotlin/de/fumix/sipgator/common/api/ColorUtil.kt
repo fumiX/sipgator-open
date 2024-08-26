@@ -13,4 +13,4 @@ fun generateCssGradient(bytes: ByteArray): String = (
   .take(3)
   .joinToString(", ", prefix = "linear-gradient(to bottom right, ", postfix = ")")
 
-fun Byte.toRange(range: IntRange) = ((toUByte().toDouble() / UByte.MAX_VALUE.toDouble()) * (range.last - range.first) + range.first).roundToInt().coerceIn(range)
+fun Byte.toRange(range: IntRange): Int = ((toUByte().toDouble() / UByte.MAX_VALUE.toDouble()) * (range.last - range.first) + range.first).roundToInt().coerceIn(range)

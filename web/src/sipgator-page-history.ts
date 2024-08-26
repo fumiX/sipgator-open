@@ -20,7 +20,7 @@ export class SipgatorPageHistory extends SipgatorPage {
   }
 
   private async historyComponent(credential: SipgateApiCredentials) {
-    return JsSipgateApiV2.getInstance().history(credential).then(it => it.map(h => html`
+    return new JsSipgateApiV2(credential).history().then(it => it.map(h => html`
       <div class="row padding surface-container wave">
         <i>${h.incoming ? (h.status === "NOPICKUP" ? "call_missed" : "call_received") : "call_made"}</i>
         <span class="badge none padding">${ h.type }</span>

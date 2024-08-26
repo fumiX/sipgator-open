@@ -1,8 +1,6 @@
 package de.fumix.sipgator.common.api
 
-import io.ktor.client.plugins.resources.get
 import io.ktor.resources.Resource
-import kotlin.js.JsExport
 
 @Resource("/v2")
 class SipgateApiV2 {

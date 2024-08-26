@@ -2,7 +2,7 @@ import { css, html, LitElement } from "lit"
 import { customElement, property, state } from "lit/decorators.js"
 import { classMap } from "lit/directives/class-map.js"
 import { until } from "lit/directives/until.js"
-import { JsSipgateApiV2, SipgateApiCredentials, StorageUtil, Nullable, generateCssGradient } from "SipGator-common"
+import { generateCssGradient, JsSipgateApiV2, Nullable, SipgateApiCredentials, StorageUtil } from "SipGator-common"
 import { CredentialUpdateEvent } from "./credential-update-event.ts"
 import { showSnackbar } from "./util-snackbar.ts"
 
@@ -64,7 +64,7 @@ export class SipgatorLogin extends LitElement {
             <input type="password" placeholder="Token" name="password" .value="${ this.newUser.token }" @input="${ this.setNewPassword }">
           </div>
           <button @click="${ () => {
-            JsSipgateApiV2.getInstance().userInfo(this.newUser)
+            new JsSipgateApiV2(this.newUser).userInfo()
               .then(ui => {
                 StorageUtil.getInstance().currentCredential = this.newUser
                 this.reloadCredentials()

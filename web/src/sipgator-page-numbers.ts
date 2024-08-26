@@ -20,13 +20,15 @@ export class SipgatorPageNumbers extends SipgatorPage {
   }
 
   private async numberComponent(credentials: SipgateApiCredentials) {
-    return JsSipgateApiV2.getInstance().userInfo(credentials).then(it =>
-        JsSipgateApiV2.getInstance().userDevices(credentials, it.sub)
+    const apiClient = new JsSipgateApiV2(credentials)
+    return apiClient.userInfo().then(it =>
+        apiClient.userDevices(it.sub)
           .then(s => s.map(s2 => html`
             <h2>${s2.alias}</h2>
             <p>Auf diesem Gerät aktive eingehende Telefonleitungen:</p>
             <p>${ s2.activePhonelines.concat(s2.activeGroups).map(l => html`<span class="chip">${l.alias}</span>`) }</p>
           `))
+          .catch(e => html`Error getting user devices: ${e}`)
       ).catch(() => html`Error getting user info`)
   }
 }

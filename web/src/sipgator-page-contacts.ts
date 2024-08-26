@@ -21,7 +21,7 @@ export class SipgatorPageContacts extends SipgatorPage {
   }
 
   async contactComponent(credential: SipgateApiCredentials) {
-    return JsSipgateApiV2.getInstance().contacts(credential)
+    return new JsSipgateApiV2(credential).contacts()
       .then(it =>
         html`${it.map(c => html`<a class="row padding surface-container">
           <div class="max">

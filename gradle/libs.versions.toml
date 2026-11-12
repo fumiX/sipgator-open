@@ -1,11 +1,11 @@
 [versions]
-kotlin = "2.0.20"
-ktor = "3.0.0-beta-2"
+kotlin = "2.4.21"
+ktor = "3.6.1"
 
 [libraries]
 jgit = "org.eclipse.jgit:org.eclipse.jgit:6.10.0.202406032230-r"
 kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
-kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version = "1.8.1" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version = "1.11.0" }
 ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
 ktor-client-js = { group = "io.ktor", name = "ktor-client-js", version.ref = "ktor" }
 ktor-client-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
